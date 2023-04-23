@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App con nodeJs express V2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="titulo">
+    <h1>PRODUCT</h1>
+</header>
+        <!-- <section> -->
+            <!-- <form action=""> -->
+                
+            <div class="uk-margin">
+                
+                <label class="uk-form-label" for="form-horizontal-select" style="font-size: xx-large;">PRODUCTS</label> <br>
+                <div class="uk-form-controls">
+                    <select id="selectUsers" class="uk-select" class="uk-form-icon" uk-icon="icon: users">
+                        <option value="">Select product</option>
+                    </select>
+                </div>
+            </div>
+            <!-- </form> -->
+        <!-- </section> <br> -->
+    <form action="" id="form">
+        <label for="">
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: users"></span>
+                    <input id="u-Name" class="uk-input" type="text" aria-label="Not clickable icon" placeholder="ID">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: tag"></span>
+                    <input id="name" class="uk-input" type="text" aria-label="Not clickable icon" placeholder="Name">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: cart"></span>
+                    <input id="age" class="uk-input" type="number" aria-label="Not clickable icon" placeholder="AMOUNT">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: plus"></span>
+                    <input id="coste" class="uk-input" type="number" aria-label="Not clickable icon" placeholder="COST">
+                </div>
+            </div>
+        </label>
+        <div class="uk-margin-small">
+            <div class="uk-button-group">
+                <button id="guarda" class="uk-button uk-button-primary">Save</button>
+                <!-- <button class="uk-button uk-button-danger">Cancel</button>
+                <button id="editMUser" class="uk-button uk-button-secondary">Edit</button> -->
+            </div>
+        </div>
+        <!-- <div class="uk-margin-small">
+            <button id="guarda" class="uk-button uk-button-primary">Save</button>
+            <button class="uk-button uk-button-danger">Cancel</button>
+            <button id="editMUser" class="uk-button uk-button-secondary">Edit</button>
+        </div> -->
+    </form><br>
+    
+</div>
+<h1 style="color: #222;">PRODUCTS TABLE</h1>
+<div id="tables">
+    <table class="uk-table uk-table-hover uk-table-divider">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Id</th>
+                <th>AMOUNT</th>
+                <th>COST</th>
+            </tr>
+        </thead>
+        <tbody id="bodyt">
+            
+        </tbody>
+    </table>
+</div><br>
+    <!-- <h1 style="color: #222;">Publicaciones</h1>
+    <div id="resulP"></div> -->
+    <footer>
+<p>Creado Por: <br>
+        -Santana Robles David Alejandro 4° - i
+</p>
+<a href="#titulo">Ir al comienzo</a>
+    </footer>
+    <script type="module" src="inventario.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
